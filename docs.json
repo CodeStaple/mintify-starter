@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Ankra Platform",
   "colors": {
     "primary": "#5d64ff",
     "light": "#5d64ff",
@@ -26,6 +26,7 @@
             "pages": [
               "essentials/cluster-create",
               "essentials/cluster-states",
+              "essentials/operations",
               "essentials/access-cluster",
               "essentials/addons",
               "essentials/profiles",
@@ -44,17 +45,17 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.ankra.io",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://join.slack.com/t/ankra-community/shared_invite/zt-30r96vykz-BGBKQ_W0F_wQdMeklRuVSg",
           "icon": "slack"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.ankra.io/blog",
           "icon": "newspaper"
         }
       ]

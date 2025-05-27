@@ -17,30 +17,50 @@ A **Stack** in Ankra is a collection of add-ons, profiles, and manifests grouped
 
 ## Why Use Stacks?
 
-- **Consistency Across Environments:**  
-  Deploy the same stack to dev, staging, and production to ensure every environment is configured identically.
-
-- **Accelerate Onboarding:**  
-  New clusters or teams can be up and running in minutes by applying a pre-built stack.
-
-- **Simplify Updates:**  
-  Update a stack and roll out changes to all clusters using it, reducing manual work and configuration drift.
-
-- **Promote Best Practices:**  
-  Share stacks across your organization to enforce standards and recommended configurations.
+<CardGroup cols={2}>
+  <Card title="Consistency Across Environments" icon="server">
+    Deploy the same stack to dev, staging, and production to ensure every environment is configured identically.
+  </Card>
+  <Card title="Accelerate Onboarding" icon="user-plus">
+    New clusters or teams can be up and running in minutes by applying a pre-built stack.
+  </Card>
+  <Card title="Simplify Updates" icon="gear">
+    Update a stack and roll out changes to all clusters using it, reducing manual work and configuration drift.
+  </Card>
+  <Card title="Promote Best Practices" icon="shield-check">
+    Share stacks across your organization to enforce standards and recommended configurations.
+  </Card>
+</CardGroup>
 
 ---
 
-## How to Use Stacks in Ankra
-
-1. **Create a Stack:**  
-   Combine add-ons, profiles, and manifests in the Ankra platform to define your stack.
-
-2. **Version and Share:**  
-   Save and version your stack for easy reuse. Share stacks with your team or organization.
-
-3. **Deploy to Clusters:**  
-   Apply a stack to one or many clusters to instantly provision all included resources and configurations.
+<Steps>
+  <Step title="Create a Stack">
+    Combine add-ons, profiles, and manifests in the Ankra platform to define your stack.
+    <ul>
+      <li>Navigate to the <b>Stacks</b> section.</li>
+      <li>Click <b>Create Stack</b> and provide a name and description.</li>
+      <li>Add the required add-ons, profiles, and manifests to your stack.</li>
+      <li>Organize the order of resources as needed for dependencies.</li>
+    </ul>
+  </Step>
+  <Step title="Version and Share">
+    Save and version your stack for easy reuse. Share stacks with your team or organization.
+    <ul>
+      <li>Assign a version to your stack for tracking changes.</li>
+      <li>Share the stack with other users or teams in your organization.</li>
+      <li>Maintain a history of changes for auditing and rollback.</li>
+    </ul>
+  </Step>
+  <Step title="Deploy to Clusters">
+    Apply a stack to one or many clusters to instantly provision all included resources and configurations.
+    <ul>
+      <li>Select the target clusters for deployment.</li>
+      <li>Deploy the stack and monitor the rollout status.</li>
+      <li>Verify that all add-ons, manifests, and profiles are applied as expected.</li>
+    </ul>
+  </Step>
+</Steps>
 
 ---
 
@@ -55,3 +75,10 @@ A **Stack** in Ankra is a collection of add-ons, profiles, and manifests grouped
 Stacks make it easy to manage, scale, and standardize your Kubernetes infrastructure—no matter how complex your needs.
 
 [Learn more about Manifests →](../essentials/manifests)
+
+---
+
+## Explore the Stacks API
+
+Want to automate stack management or integrate with your CI/CD workflows?
+Check out the [API Reference](../../api-reference) for endpoints to create, update, and apply stacks programmatically.
